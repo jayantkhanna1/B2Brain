@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>B2Brain Dashboard</title>
+
+    <!-- Local styling -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.svg">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ec7d8e2d79.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="left_menu">
+        <section id="brand">
+            <img src="images/logo.svg" alt="">
+            <h2>B2Brain</h2>
+        </section>
+        <section id="links">
+            <span class="fontawesome"><img src="images/home.svg" alt=""><a href=""><b> Dashboard</b></a></span><br>
+            <span class="fontawesome"> <img src="images/star.svg" alt=""> <div class="notif">
+                <a href="">Intel</a>
+                <span>4 unread</span>
+            </div></span><br>
+            <span class="fontawesome"><img src="images/user.svg" alt=""><div class="notif">
+                <a href="">Leads</a>
+                <span>4 unseen</span>
+            </div></span><br>
+            <span>
+                <div id="arrow_1" class="fontawesome  panel-collapsed">
+                    <img src="images/building.svg" alt="">
+                    <a href="javascript:void(0)">Accounts</a>
+                    <img class="arrow" src="images/arrow.svg" alt="">
+                </div>
+                <div class="collapsable" id="collapsable_1">
+                        <a>Manage All</a>
+                        <a>Track new accounts</a>
+                        <a>Bulk import</a>
+                </div>
+            </span><br>
+            <span>
+                <div id="arroww_2" class="fontawesome  panel-collapsed">
+                    <img src="images/cog.svg" alt="">
+                    <a href="javascript:void(0)">Prefrences</a>
+                    <img class="arrow" id="arrow_2" src="images/arrow.svg" alt="">
+                </div>
+                    <div id="collapsable_2" class="collapsable">
+                        
+                            <a>Product Focus</a>
+                            <a>Intel Prefrence</a>
+                            <a>Lead Persona</a>
+                        
+                    </div>
+            </span>
+            <br>
+            <span class="fontawesome">
+                <img src="images/link.svg" alt="">
+                <a href="">Integrations</a>
+            </span><br>
+            <span class="fontawesome">
+                <img src="images/users.svg" alt="">
+                <a href="">Team</a>
+            </span><br>
+            <span class="fontawesome">
+                <img src="images/comments-alt.svg" alt="">
+                <a href="">Help/Support</a>
+            </span><br>
+        </section>
+    </div>
+    <div id="main_body">
+        <div id="searchbar">
+            <img id="search_img" src="images/search.svg" alt="">
+            <img id="cross" src="images/cross.svg" alt="">
+            <input type="text" placeholder="Search by account name or website">
+            <div id="notif">
+                <img src="images/bell.svg" alt="">
+                <span></span>
+            </div>
+            <img src="images/img_input.svg" alt="" id="input_side">
+        </div>
+        <header>
+            <img src="images/hero-image.svg" alt="">
+        </header>
+        <section id="trusted">
+            <img src="images/trusted.svg" alt="">
+        </section>
+        <section id="customer_reviews">
+            <img src="images/comments.svg" alt="">
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
