@@ -79,23 +79,188 @@
     <div id="main_body">
         <div id="searchbar">
             <img id="search_img" src="images/search.svg" alt="">
-            <img id="cross" src="images/cross.svg" alt="">
-            <input type="text" placeholder="Search by account name or website">
+            <img onclick="empty_search()" id="cross" src="images/cross.svg" alt="">
+            <input type="text" id="search_input" onkeyup="change_search()" placeholder="Search by account name or website">
             <div id="notif">
                 <img src="images/bell.svg" alt="">
                 <span></span>
             </div>
             <img src="images/img_input.svg" alt="" id="input_side">
         </div>
-        <header>
-            <img src="images/hero-image.svg" alt="">
-        </header>
-        <section id="trusted">
-            <img src="images/trusted.svg" alt="">
-        </section>
-        <section id="customer_reviews">
-            <img src="images/comments.svg" alt="">
-        </section>
+        <div id="part_one">
+            <header>
+                <img src="images/hero-image.svg" alt="">
+            </header>
+            <section id="trusted">
+                <img src="images/trusted.svg" alt="">
+            </section>
+            <section id="customer_reviews">
+                <img src="images/comments.svg" alt="">
+            </section>
+        </div>
+        <div id="part_two">
+            <div id="outer_similar_acc">
+                <h2 id="heading_similar_acc">Similar Accounts</h2>
+                <div id="similar_acc">
+                    <div  id="card_1" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_1" onclick="start_loader(1)" class="track">
+                            <img id="loader_1" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_1">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_2" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_2" onclick="start_loader(2)" class="track">
+                            <img id="loader_2" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_2">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_3" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_3" onclick="start_loader(3)" class="track">
+                            <img id="loader_3" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_3">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_4" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_4" onclick="start_loader(4)" class="track">
+                            <img id="loader_4" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_4">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_5" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_5" onclick="start_loader(5)" class="track">
+                            <img id="loader_5" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_5">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_6" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_6" onclick="start_loader(6)" class="track">
+                            <img id="loader_6" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_6">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_7" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_7" onclick="start_loader(7)" class="track">
+                            <img id="loader_7" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_7">Track</button>
+                        </div>
+                    </div>
+
+                    <div  id="card_8" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_8" onclick="start_loader(8)" class="track">
+                            <img id="loader_8" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_8">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_9" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_9" onclick="start_loader(9)" class="track">
+                            <img id="loader_9" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_9">Track</button>
+                        </div>
+                        
+                    </div>
+
+                    <div  id="card_10" class="card">
+                        <div class="logo">
+                            <img src="images/img_input.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Harrow Inc.</p>
+                            <a href="">www.harrow.com</a>
+                        </div>
+                        <div id="track_10" onclick="start_loader(10)" class="track">
+                            <img id="loader_10" data-abc="yes" class="spinner loading" src="images/spinner.svg" alt="">
+                            <button id="button_10">Track</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="quick_actions">
+                <h2>Quick Actions</h2>
+                <div id="quick_action_a">
+                    <a href="">Track New Account</a>
+                    <a href="">Bulk Track Accounts</a>
+                    <a href="">Manage accounts</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

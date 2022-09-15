@@ -89,7 +89,10 @@ body,#brand{
     background-color: #eeeeee;
 }
 #arrow_2{
-    margin-left: 76px;
+    margin-left: 77px;
+}
+#cross{
+    cursor: pointer;
 }
 .collapsable{
     display: none;
@@ -193,4 +196,103 @@ header img,#customer_reviews img{
 }
 #trusted{
     margin-top: 25px;
+}
+
+#part_two{
+    display: none;
+    margin-top: 100px;
+}
+#heading_similar_acc{
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    opacity: 0.5;
+}
+#similar_acc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    width: 295px;
+    margin-left: 50px;
+}
+.logo img{
+    width: 50px;
+    margin-right: 20px;
+}
+.info a{
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 0.5;
+}
+.track{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    border-radius: 4px;    
+    padding: 8px 15px;
+    border: 1px solid #FF6059;
+}
+
+.track button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #FF6059;
+    background-color: transparent;
+}
+.spinner{
+    display: none;
+}
+.loading{
+    width: 16px;
+    margin-top: 5px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+#quick_actions h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+#outer_similar_acc{
+    width: 830px;
+}
+#quick_action_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#quick_actions{
+    margin-left: 50px;
+}
+#quick_action_a a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 20px;
 }
