@@ -64,9 +64,56 @@ function call_Api(){
 async function getapi(url) {
     const response = await fetch(url);
     var data = await response.json();
-    console.log(data);
+    setData(data);
 }
-
+var dataa
+function setData(data){
+    for (var i=0;i<data.length;i++){
+        dataa = data
+        document.getElementById("name_"+(i+1)).innerHTML = data[i].company;
+        document.getElementById("link_"+(i+1)).innerHTML = data[i].website;
+        document.getElementById("link_"+(i+1)).href = data[i].website;
+        try{
+            if(data[i].logo != ""){
+                document.getElementById("logo_"+(i+1)).src = data[i].logo;
+            }
+            else{
+                const listItem = document.getElementById("logo_"+(i+1));
+                const div = document.createElement("div");
+                div.style.width = "50px";
+                div.id = "logo_"+(i+1);
+                div.style.height = "50px";
+                div.style.backgroundColor = data[i].color;
+                div.style.borderRadius = "10px";
+                div.style.display = "flex";
+                div.style.marginRight = "20px";
+                div.style.justifyContent = "center";
+                div.style.alignItems = "center";
+                div.style.fontSize = "12px";
+                div.style.color = "white";
+                div.innerHTML = data[i].company[0];
+                listItem.parentNode.replaceChild(div, listItem);
+            }
+        }
+        catch{
+            const listItem = document.getElementById("logo_"+(i+1));
+                const div = document.createElement("div");
+                div.style.width = "50px";
+                div.style.height = "50px";
+                div.id = "logo_"+(i+1);
+                div.style.backgroundColor = data[i].color;
+                div.style.borderRadius = "10px";
+                div.style.display = "flex";
+                div.style.justifyContent = "center";
+                div.style.alignItems = "center";
+                div.style.fontSize = "12px";
+                div.style.color = "white";
+                div.innerHTML = data[i].company[0];
+                listItem.parentNode.replaceChild(div, listItem);
+        }
+        
+    }
+}
 var idd
 function start_loader(id){
     if(document.getElementById("loader_"+id).getAttribute("data-abc") == "yes")
@@ -75,6 +122,10 @@ function start_loader(id){
         var ele = document.getElementById("loader_"+id);
         ele.classList.remove("spinner");
         setTimeout(changebutton, 3000)
+        var name = document.getElementById("name_"+id).innerHTML
+        var slug = dataa[id-1].slug
+        var time = new Date().toLocaleString();
+        console.log(name +" "+slug+" tracked at "+time)
     }
 }
 function changebutton(){

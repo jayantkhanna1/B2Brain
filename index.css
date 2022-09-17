@@ -226,17 +226,28 @@ header img,#customer_reviews img{
 }
 .logo img{
     width: 50px;
+    height: 50px;
     margin-right: 20px;
+}
+.info p{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .info a{
     text-decoration: none;
-    color: #000;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: #000000;
     opacity: 0.5;
+    display: block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .track{
     display: flex;
